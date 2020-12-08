@@ -19,5 +19,7 @@ from authentication import  urls
 from django.conf.urls import include, url
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url('authentication/' , include('authentication.urls'))
+    url('authentication/' , include('authentication.urls')),
+    url('blog/' , include('blog.urls')),
+
 ]
